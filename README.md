@@ -34,6 +34,9 @@
     <img src="/caps/1.png" alt="Inicio de Sesión" width="200" />
     <img src="/caps/2.png" alt="Inicio de la aplicación" width="200" />
     <img src="/caps/3.png" alt="Menú de la aplicación" width="200" />
+    <img src="/caps/4.png" alt="Frutas/Comida favoritas" width="200" />
+    <img src="/caps/5.png" alt="Descripción de las" width="200" />
+    <img src="/caps/6.png" alt="Carrito de compras" width="200" />
     <!-- Agrega las demás imágenes con el mismo formato -->
 </div>
 
