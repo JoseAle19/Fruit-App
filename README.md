@@ -1,16 +1,27 @@
-# app
+[![Flutter](https://img.shields.io/badge/Built%20with-Flutter-blue.svg)](https://flutter.dev/)
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Configuración de Flutter
+1. Instala Flutter: [Instrucciones de Instalación](https://flutter.dev/docs/get-started/install)
+2. Instala las dependencias: `flutter pub get`
+3. Ejecuta la aplicación: `flutter run`
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Dependencias
+- [shared_preferences 2.2.2 ](https://pub.dev/packages/shared_preferences): Almacenamiento local en el dispositivo
+- [provider](https://pub.dev/packages/provider): Para el manejo del estado
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+## Capturas de Pantalla
+![Inicio de Sesión](/caps/1.png)
+![Inicio de la apliación](/caps/2.png)
+![Menu de la aplicación](/caps/3.png)
+![Frutas/Comida favoritas](/caps/4.png)
+![Descripción de las frutas](/caps/5.png)
+![Carrito de compras](/caps/6.png)
+
+
+
+[Mi web](https://joseale.netlify.app/)
