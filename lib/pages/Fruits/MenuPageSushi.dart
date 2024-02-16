@@ -1,17 +1,16 @@
 import 'package:app/components/CardProductMenu.dart';
 import 'package:app/components/MyButton.dart';
 import 'package:app/models/Food.dart';
+import 'package:app/pages/Home.dart';
 import 'package:app/providers/Shop.dart';
 import 'package:app/pages/Details_food_details.dart';
-import 'package:app/pages/Fruits/Cart.dart';
-import 'package:app/pages/Fruits/FavoriteFood.dart';
 import 'package:app/themes/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 class MenuPage extends StatelessWidget {
-  MenuPage({super.key});
+  const MenuPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,18 +29,12 @@ class MenuPage extends StatelessWidget {
       appBar: AppBar(
         elevation: 0.0,
         bottomOpacity: 0,
-        actions: [
-          IconButton(
-              onPressed: () => {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (_) => const CartItems(),
-                      ),
-                    )
-                  },
-              icon: const Icon(Icons.shopping_cart_outlined))
-        ],
+        leading: IconButton(
+            onPressed: () {
+              Navigator.pushReplacement(
+                  context, MaterialPageRoute(builder: (_) => const Homepage()));
+            },
+            icon: const Icon(Icons.arrow_back_ios_outlined)),
         backgroundColor: Colors.grey[200],
         centerTitle: true,
         title: const Text('Frutas'),
@@ -81,23 +74,7 @@ class MenuPage extends StatelessWidget {
                 ],
               ),
             ),
-            // Search products
-            Padding(
-              padding: const EdgeInsets.all(20),
-              child: TextFormField(
-                decoration: InputDecoration(
-                  labelText: "Buscar fruta",
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.white),
-                    borderRadius: BorderRadius.circular(25),
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.white),
-                    borderRadius: BorderRadius.circular(25),
-                  ),
-                ),
-              ),
-            ),
+
             // Title del contenido
             Container(
               width: double.infinity,
@@ -165,47 +142,6 @@ class MenuPage extends StatelessWidget {
                 ],
               ),
             )
-          ],
-        ),
-      ),
-      drawer: Drawer(
-        child: ListView(
-          padding: const EdgeInsets.only(left: 0),
-          children: [
-            DrawerHeader(
-              decoration: BoxDecoration(
-                color: primaryColor,
-              ),
-              child: const Text(
-                'Hola! José',
-                style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold),
-              ),
-            ),
-            ListTile(
-              trailing: const Icon(
-                Icons.favorite,
-                color: Colors.grey,
-              ),
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (_) => const FavoriteFood()));
-              },
-              title: const Text('Favoritos'),
-            ),
-            ListTile(
-              trailing: const Icon(
-                Icons.shopping_cart,
-                color: Colors.grey,
-              ),
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (_) => const CartItems()));
-              },
-              title: const Text('Mi carrito'),
-            ),
           ],
         ),
       ),

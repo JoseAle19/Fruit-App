@@ -3,6 +3,7 @@ import 'package:app/pages/Home.dart';
 import 'package:app/providers/ConuterProvider.dart';
 import 'package:app/providers/ThemeChanger.dart';
 import 'package:app/providers/fruits/Favorite.dart';
+import 'package:app/providers/fruits/Pages.dart';
 import 'package:app/providers/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -13,6 +14,7 @@ void main() => runApp(MultiProvider(
         ChangeNotifierProvider(create: (_) => MyProvider()),
         ChangeNotifierProvider(create: (_) => CounterProvider()),
         ChangeNotifierProvider(create: (_) => FoodFavorite()),
+        ChangeNotifierProvider(create: (_) => PagesProvider()),
         ChangeNotifierProvider(
           create: (_) => Shop(),
         ),

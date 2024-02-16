@@ -13,12 +13,14 @@ class CartItems extends StatelessWidget {
     final cartProvider = Provider.of<Shop>(context);
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
+        centerTitle: true,
         title: const Text('Carrito de compras'),
       ),
       body: Center(
         child: cartProvider.cart.isEmpty
             ? const Center(
-                child: Text('Sin productos agregados'),
+                child: Text('Sin productos agregados :('),
               )
             : Column(
                 children: [
