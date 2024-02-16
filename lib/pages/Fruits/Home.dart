@@ -13,7 +13,7 @@ class _HomepageFruitsState extends State<HomepageFruits> {
   late PageController _controller;
   @override
   void initState() {
-    _controller = PageController();
+    _controller = PageController(initialPage: 1);
     super.initState();
   }
 
