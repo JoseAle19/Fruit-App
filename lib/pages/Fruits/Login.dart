@@ -1,4 +1,4 @@
-import 'package:app/pages/Fruits/MenuPageSushi.dart';
+import 'package:app/pages/Fruits/Home.dart';
 import 'package:app/themes/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -119,8 +119,10 @@ class LoginFruit extends StatelessWidget {
                   children: [
                     GestureDetector(
                       onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (_) => MenuPage()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (_) => const HomepageFruits()));
                       },
                       child: Container(
                         padding: const EdgeInsets.all(15),

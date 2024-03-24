@@ -64,9 +64,20 @@ flutter:
   # example:
   assets:
     - assets/images/
+    - assets/networks/
   fonts:
     - family: MyFlutterApp
       fonts:
         - asset: assets/fonts/MyFlutterApp.ttf
+    - family: poppinsbold
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Bold.ttf
+    - family: poppinsextrabold
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-ExtraBold.ttf
+    - family: poppinsmedium
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Medium.ttf
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

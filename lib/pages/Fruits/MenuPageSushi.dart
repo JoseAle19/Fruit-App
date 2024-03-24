@@ -1,9 +1,8 @@
 import 'package:app/components/CardProductMenu.dart';
 import 'package:app/components/MyButton.dart';
 import 'package:app/models/Food.dart';
-import 'package:app/pages/Home.dart';
-import 'package:app/providers/Shop.dart';
 import 'package:app/pages/Details_food_details.dart';
+import 'package:app/providers/Shop.dart';
 import 'package:app/themes/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -30,10 +29,7 @@ class MenuPage extends StatelessWidget {
         elevation: 0.0,
         bottomOpacity: 0,
         leading: IconButton(
-            onPressed: () {
-              Navigator.pushReplacement(
-                  context, MaterialPageRoute(builder: (_) => const Homepage()));
-            },
+            onPressed: () => Navigator.pop(context),
             icon: const Icon(Icons.arrow_back_ios_outlined)),
         backgroundColor: Colors.grey[200],
         centerTitle: true,

@@ -14,6 +14,11 @@ class FirstPage extends StatelessWidget {
     );
     final themeChanger = Provider.of<ThemeChanger>(context);
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+            onPressed: () => Navigator.pop(context),
+            icon: const Icon(Icons.arrow_back_ios)),
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
